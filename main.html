@@ -1,0 +1,65 @@
+
+
+<html>
+
+	<head>
+
+		<!-- Codificación de caracteres UTF-8 -->
+		<meta charset="utf-8">
+
+		<!-- Llamada a un archivo externo de CSS -->
+		<link rel="stylesheet" href="estilos.css">
+		
+		<!-- Código de JavaScript -->
+		<script type="text/javascript">
+			function enviarDatos()
+			{
+				if (document.getElementById("txtMatricula").value == "")
+				{
+					alert("Debes ingresar una matrícula...");
+					return;
+				}	
+				
+	
+				frmMain.submit();
+			}
+		</script>
+	
+	</head>
+
+
+	<body>
+	
+		<form method="get" id="frmMain" submit="" action="target.php"> 
+			<a style="font-size:18px; font-weight:bold; color:#afaeae;">MVC</a>
+			<br>
+			<a style="font-size:14px; font-weight:bold; color:#afaeae;">Ejemplo práctico</a>
+			<hr style="width:100%; height:4px; color:blue; background-color:blue;"></hr>
+		
+			<div style="font-size:14px; border-color:#434963; border-top:5px; border:1px solid; width:100%; height:200px;">
+				
+				<table border=0 style="">
+					<tr>
+						<td class="labelTable">Matrícula:</td><td style="width:10px;"></td><td style="width:100px;">
+						<input id="txtMatricula" name="matricula" type="text"></td>  <!-- Caja de texto donde recibe la matrícula -->
+					</tr>
+					
+					<tr>
+						<td class="labelTable">Nombre:</td><td style="width:10px;"></td><td style="width:100px;">
+						<input id="txtNombre" name="nombre" type="text"></td>  <!-- Caja de texto donde recibe la matrícula -->
+					</tr>
+					
+					
+					<tr>
+						<td></td><td style="width:10px;"></td><td style="width:100px;">
+						<input id="btnEnviar" type="button" value="enviar" onclick="enviarDatos()"></td> <!-- Botón para el envío conectado a función de JS -->
+					</tr>
+					
+				</table>
+			</div>
+		</form>
+	
+		
+	</body>
+
+</html>
