@@ -93,7 +93,7 @@
 
 	<body>
 	
-		<form method="post" id="frmMain" name="frmMain" action="target-email.php" target="_blank"> 
+		<form method="post" id="frmMain" name="frmMain" action="save-data.php" target="_blank"> 
 			<a style="font-size:18px; font-weight:bold; color:#afaeae;">MVC</a>
 			<br>
 			<a style="font-size:14px; font-weight:bold; color:#afaeae;">Ejemplo práctico</a>
@@ -162,7 +162,7 @@
 		</form>
 		<a style="font-size:2px;">nbsp;</a>
 		<div style="font-size:14px; border-color:#434963; border-top:5px; border:1px solid; width:100%; height:200px;">
-			<iframe style="font-size:14px; border-color:#434963; border-top:5px; border:1px dotted; width:100%; height:200px;" id="ifrData" src="conexion.php" frameborder="0">
+			<iframe style="font-size:14px; border-color:#434963; border-top:5px; border:1px dotted; width:100%; height:200px;" id="ifrData" src="show-data.php" frameborder="0">
 
 			</iframe>
 		</div>

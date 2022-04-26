@@ -39,13 +39,7 @@
     /* Execute the statement */
     if($stmt->execute())
     {
-        for ($i = 0; $i < 50000000; ++$i)
-        {
-            echo "";
-        }
-        session_start();
-        $_SESSION['matricula']  = $_POST["matricula"];
-        header('Location: main-email.html');
+        header('Location: form.php');
     }
     else
     {
